@@ -87,35 +87,3 @@ Example:
 ## Licenses
 
 Unlicensed.
-
-# To-Do List
-
-- [x] Identify users.
-- [x] Add Suitable Authentication, eg: API keys, Username/Password Login.
-  - [Guards](https://docs.nestjs.com/guards)
-- [x] Limit users to 100 requests per workday (Mon-Fri) and 200 requests per day on weekends(Sat-Sun). if quota is filled, return an error message.
-  - 429 statuscode
-  - [Rate Limiting](https://docs.nestjs.com/security/rate-limiting)
-- [x] store each request with the date/time it was performed, its parameters and the response body.
-- [x] Service Parameters:
-  - Source currency.
-  - Amount to be converted.
-  - Final currency.
-  - e.g. `?from=BTC&to=USD&amount=999.20`
-- [x] Return data as JSON
-- [x] e2e tests [users.e2e, api.e2e]
-
-```bash
-# mock return data
-{
-  "data": {
-    "isoDate": "2015-06-23T18:02:51Z",
-    "base": "USD",
-    "amount": "12.85",
-    "quote": "EURO",
-    "currencyPair": "USD/EURO = 12.22"
-  }
-}
-```
-
-- [ ] _BONUS:_ cache responses from external currency API.
