@@ -20,7 +20,9 @@ A currency conversion service that includes FIAT and cryptocurrencies. Users can
 $ npm install
 ```
 
-3. Create database migrations
+3. Create `.env` file with db connection string. `.env.example` provided for reference.
+
+4. Create database migrations
 
 ```
 $ npx prisma migrate dev
