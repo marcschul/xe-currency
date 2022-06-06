@@ -14,7 +14,7 @@ A currency conversion service that includes FIAT and cryptocurrencies. Users can
 
 1. Clone repository into local machine.
 
-2. Install packages and dependacies in the `/demo` directory with the following command.
+2. Install packages and dependencies in the `/demo` directory with the following command.
 
 ```bash
 $ npm install
